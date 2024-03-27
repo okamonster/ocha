@@ -1,21 +1,24 @@
-import { fadeIn } from '~/constants/animation'
+/* eslint-disable react/no-unknown-property */
 import { Box, Heading } from '@chakra-ui/react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useMemo } from 'react'
 import * as THREE from 'three'
-import { vertexShader, fragmentShader } from './shader'
 import { PerspectiveCamera } from '@react-three/drei'
+
+import { vertexShader, fragmentShader } from './shader'
+
+import { fadeIn } from '~/constants/animation'
 
 export const Visual = () => {
   return (
     <Box
-      w={'100%'}
-      padding={'50px 0'}
-      background={'radial-gradient(closest-side,#FFFFFF,#F7F7F9)'}
-      display={'flex'}
-      justifyContent={'center'}
-      alignItems={'center'}
-      position={'relative'}
+      w="100%"
+      padding="50px 0"
+      background="radial-gradient(closest-side,#FFFFFF,#F7F7F9)"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      position="relative"
       animation={`${fadeIn} 3s forwards`}
     >
       <Canvas style={{ position: 'absolute' }}>
@@ -25,11 +28,11 @@ export const Visual = () => {
       <Box
         w={[200, 300]}
         h={[200, 300]}
-        rounded={'full'}
-        display={'flex'}
-        justifyContent={'center'}
-        alignItems={'center'}
-        border={'solid 5px'}
+        rounded="full"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        border="solid 5px"
         zIndex={1}
       >
         <Heading fontSize={[20, 30]}>OCHA .dev</Heading>
@@ -61,9 +64,9 @@ const Particle = () => {
   })
   return (
     <points rotation={[0, 0, Math.PI / 3]}>
-      <bufferGeometry attach={'geometry'}>
+      <bufferGeometry attach="geometry">
         <bufferAttribute
-          attach={'attributes-position'}
+          attach="attributes-position"
           array={planePositions}
           itemSize={3}
           count={planePositions.length / 3}
