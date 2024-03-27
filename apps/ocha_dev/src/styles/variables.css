@@ -1,0 +1,16 @@
+:root {
+  /* Theme colors */
+  --color-primary: #8686f4;
+
+  /* Background colors */
+  --color-bg-base: #f7f7f9;
+  --color-bg-white: #ffffff;
+
+  /* Text colors */
+  --color-text-color: #333;
+  --color-text-primary: #8686f4;
+
+  /* Button colors */
+  --color-button-bg-primary: #eaeafa;
+  --color-button-primary: #a3a0d3;
+}
