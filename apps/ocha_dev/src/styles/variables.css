@@ -13,4 +13,7 @@
   /* Button colors */
   --color-button-bg-primary: #eaeafa;
   --color-button-primary: #a3a0d3;
+
+  /* Border colors */
+  --color-header-border: #e0e0e0;
 }
