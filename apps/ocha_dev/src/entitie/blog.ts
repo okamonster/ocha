@@ -1,4 +1,4 @@
-export interface Blog {
+export type Blog = {
   id: string
   createdAt: string
   updatedAt: string
