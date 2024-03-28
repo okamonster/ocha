@@ -1,0 +1,44 @@
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.sectionTitle {
+  .title {
+    position: relative;
+  }
+
+  .title:before {
+    position: absolute;
+    border-bottom: solid 1px var(--color-primary);
+    bottom: 0;
+    content: '';
+    animation: slide 2s forwards;
+  }
+
+  @media (min-width: 0) {
+    .title {
+      font-size: 20px;
+    }
+
+    .description {
+      font-size: 12px;
+      font-family: sans-serif;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 14px;
+      font-family: sans-serif;
+    }
+  }
+}
