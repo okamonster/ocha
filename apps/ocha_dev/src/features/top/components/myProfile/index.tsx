@@ -1,5 +1,7 @@
 import styles from './style.module.css'
 
+import { LinkButton } from '~/components/Buttons/LinkButton'
+
 export const MyProfile = (): React.ReactNode => {
   return (
     <div className={styles.myProfile}>
@@ -26,6 +28,7 @@ export const MyProfile = (): React.ReactNode => {
           <li>スワンスワンズ</li>
         </ul>
       </div>
+      <LinkButton label="もっと見る" href="/profile" width="100%" />
     </div>
   )
 }
