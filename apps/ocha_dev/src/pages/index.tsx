@@ -1,5 +1,6 @@
 import type { InferGetStaticPropsType, NextPage } from 'next'
 
+import { DeafaultHead } from '~/components/Head/DefaultHead'
 import { DefaultLayout } from '~/components/Layout/DefaultLayout'
 import type { Blog } from '~/entitie/blog'
 import { TopContainer } from '~/features/top/components/topContainer'
@@ -13,9 +14,16 @@ type Props = {
 
 const IndexPage: NextPage<IndexPageProps> = ({ blogs }: Props) => {
   return (
-    <DefaultLayout>
-      <TopContainer blogs={blogs} />
-    </DefaultLayout>
+    <>
+      <DeafaultHead
+        title="お茶.dev"
+        description="お茶/岡本和輝のポートフォリオ"
+        ogpImage="https://www.xn--t8jy01w.dev/images/ogp.png"
+      />
+      <DefaultLayout>
+        <TopContainer blogs={blogs} />
+      </DefaultLayout>
+    </>
   )
 }
 
