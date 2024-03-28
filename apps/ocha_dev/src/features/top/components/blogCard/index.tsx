@@ -25,6 +25,7 @@ export const BlogCard = ({ blog }: CardProps): React.ReactNode => {
             height={630}
             className={styles.blogImage}
             loading="lazy"
+            layout="responsive"
           />
         </Card.Section>
 
