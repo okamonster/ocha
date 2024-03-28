@@ -2,13 +2,13 @@ import type { Skill } from '~/entitie/skill'
 
 export const skillOptions = [
   {
-    imageUrl: '/images/html.webp',
+    imageUrl: '/images/HTML.webp',
     name: 'HTML',
     categorie: ['markup'],
     genle: ['web', 'front-end'],
   },
   {
-    imageUrl: '/images/css.webp',
+    imageUrl: '/images/CSS.webp',
     name: 'CSS',
     categorie: ['markup'],
     genle: ['web', 'front-end'],
@@ -86,7 +86,7 @@ export const skillOptions = [
     genle: ['RDB'],
   },
   {
-    imageUrl: '/images/apache.webp',
+    imageUrl: '/images/Apache.webp',
     name: 'Apache',
     categorie: ['Runtime'],
     genle: ['WebServer'],
