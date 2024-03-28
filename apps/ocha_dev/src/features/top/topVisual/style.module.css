@@ -1,0 +1,36 @@
+.topVisual {
+  width: 100%;
+  padding: 50px 0;
+  background: radial-gradient(
+    closest-side,
+    var(--color-bg-white),
+    var(--color-bg-base)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    @media (min-width: 0) {
+      width: 200px;
+      height: 200px;
+      border: solid 5px var(--color-text-color);
+      border-radius: 100px;
+      font-size: 20px;
+    }
+
+    @media (min-width: 768px) {
+      width: 300px;
+      height: 300px;
+      border: solid 5px var(--color-text-color);
+      border-radius: 150px;
+      font-size: 30px;
+    }
+  }
+}
