@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', 'YuGothic', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
   a {
     color: inherit;
@@ -14,7 +14,7 @@ body {
   *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Raleway', 'YuGothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
     clear: both;
   }
 
@@ -33,7 +33,7 @@ body {
   }
 
   p {
-    font-family: 'Raleway', 'YuGothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
   }
 
