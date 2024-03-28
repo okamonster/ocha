@@ -33,6 +33,7 @@ export const TopContainer = ({ blogs }: Props): React.ReactNode => {
               height={200}
               objectFit="fill"
               className={styles.profileImage}
+              loading="eager"
             />
             <MyProfile />
           </div>
