@@ -15,15 +15,15 @@
   gap: 20px;
 
   @media (min-width: 0) {
-    padding: 0 30px;
+    padding: 0 30px 30px;
   }
 
   @media (min-width: 480px) {
-    padding: 0 90px;
+    padding: 0 90px 30px;
   }
 
   @media (min-width: 768px) {
-    padding: 0 150px;
+    padding: 0 150px 30px;
   }
 
   .section {
@@ -35,6 +35,7 @@
     .profileContainer {
       display: flex;
       justify-content: center;
+      align-items: center;
 
       .profileImage {
         border-radius: 50%;
@@ -77,6 +78,14 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
+    }
+
+    .contactContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 0 10%;
     }
   }
 }

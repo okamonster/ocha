@@ -11,6 +11,7 @@ import { MyProfile } from '~/features/top/components/myProfile'
 import type { Blog } from '~/entitie/blog'
 import { BlogCardList } from '~/features/top/components/blogCardList'
 import { LinkButton } from '~/components/Buttons/LinkButton'
+import { ContactList } from '~/features/top/components/contactList'
 
 type Props = {
   blogs: Array<Blog>
@@ -49,6 +50,13 @@ export const TopContainer = ({ blogs }: Props): React.ReactNode => {
           <div className={styles.blogContainer}>
             <BlogCardList blogs={blogs} />
             <LinkButton href="/blog" label="ブログ一覧" width="150px" />
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <SectionTitle title="CONTACT" description="お問い合わせ" />
+          <div className={styles.contactContainer}>
+            <ContactList />
           </div>
         </section>
       </main>
