@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 
 import styles from './style.module.css'
 
-import { Particle } from '~/features/top/particle'
+import { Particle } from '~/features/top/components/particle'
 
 export const TopVisual = (): React.ReactNode => {
   return (
