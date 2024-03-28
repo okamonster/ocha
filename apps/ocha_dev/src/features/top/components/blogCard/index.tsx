@@ -1,4 +1,5 @@
-import { Card, Image } from '@mantine/core'
+import { Card } from '@mantine/core'
+import Image from 'next/image'
 import Link from 'next/link'
 import dayjs from 'dayjs'
 
@@ -16,7 +17,14 @@ export const BlogCard = ({ blog }: CardProps): React.ReactNode => {
     <Link href={`/blog/${blog.id}`}>
       <Card shadow="lg">
         <Card.Section>
-          <Image src={blog.OGP.url} mah={180} fit="fill" />
+          <Image
+            src={blog.OGP.url}
+            objectFit="fill"
+            alt={blog.title}
+            width={1200}
+            height={630}
+            className={styles.blogImage}
+          />
         </Card.Section>
 
         <Card.Section p={10}>

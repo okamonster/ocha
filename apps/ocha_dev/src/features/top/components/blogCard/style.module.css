@@ -6,3 +6,7 @@
   display: flex;
   gap: 5px;
 }
+
+.blogImage {
+  max-height: 180px;
+}
