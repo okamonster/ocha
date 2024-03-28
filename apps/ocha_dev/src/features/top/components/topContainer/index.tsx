@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 import styles from './style.module.css'
 
+import { SkillCardList } from '~/features/top/components/skillCardList'
+import { skillOptions } from '~/features/top/types'
 import { TopVisual } from '~/features/top/components/topVisual'
 import { DefaultHeader } from '~/components/Navigations/DefaultHeader'
 import { SectionTitle } from '~/components/Base/SectionTitle'
@@ -30,6 +32,9 @@ export const TopContainer = (): React.ReactNode => {
 
         <section className={styles.section}>
           <SectionTitle title="SKILLS" description="技術スキル" />
+          <div className={styles.skillContainer}>
+            <SkillCardList skills={skillOptions} />
+          </div>
         </section>
       </main>
     </>
