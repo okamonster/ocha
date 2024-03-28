@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unknown-property */
-import { Points } from '@react-three/drei'
 import { useMemo } from 'react'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
@@ -30,7 +29,7 @@ export const Particle = (): React.ReactNode => {
   })
 
   return (
-    <Points rotation={[0, 0, Math.PI / 3]}>
+    <points rotation={[0, 0, Math.PI / 3]}>
       <bufferGeometry attach="geometry">
         <bufferAttribute
           attach="attributes-position"
@@ -45,6 +44,6 @@ export const Particle = (): React.ReactNode => {
         depthTest={false}
         depthWrite={false}
       />
-    </Points>
+    </points>
   )
 }
