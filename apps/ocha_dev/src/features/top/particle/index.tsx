@@ -4,8 +4,8 @@ import { useMemo } from 'react'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
 
-import vertex from '~/features/top/shaders/vertex.glsl'
-import fragment from '~/features/top/shaders/fragment.glsl'
+import vertex from '~/features/top/shader/vertexShader.glsl'
+import fragment from '~/features/top/shader/fragmentShader.glsl'
 
 export const Particle = (): React.ReactNode => {
   const spherePosition = useMemo(() => {
