@@ -7,6 +7,17 @@
   }
 }
 
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .sectionTitle {
   .title {
     position: relative;
@@ -18,6 +29,11 @@
     bottom: 0;
     content: '';
     animation: slide 2s forwards;
+  }
+
+  .description {
+    animation: fadeDown 1s forwards 2s;
+    opacity: 0;
   }
 
   @media (min-width: 0) {
