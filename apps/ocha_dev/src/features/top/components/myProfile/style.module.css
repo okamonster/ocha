@@ -1,0 +1,54 @@
+.myProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .heding {
+    display: grid;
+    gap: 10px;
+    .name {
+      color: var(--color-primary);
+      font-weight: bold;
+    }
+
+    .profession {
+      font-weight: bold;
+      color: var(--color-text-black);
+    }
+
+    @media (min-width: 0) {
+      .name {
+        font-size: 16px;
+      }
+
+      .profession {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .name {
+        font-size: 20px;
+      }
+
+      .profession {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .profileItem {
+    display: grid;
+    gap: 5px;
+
+    .label {
+      font-weight: bold;
+      color: var(--color-button-primary);
+    }
+
+    .hobbyList {
+      display: grid;
+      gap: 5px;
+    }
+  }
+}

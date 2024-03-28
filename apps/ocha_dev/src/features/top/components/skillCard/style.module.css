@@ -1,0 +1,37 @@
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: var(--color-bg-white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .categories {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .skillDetail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 100px;
+
+    .skillImage {
+      border-radius: 24px;
+    }
+
+    .skillName {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .genles {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+  }
+}

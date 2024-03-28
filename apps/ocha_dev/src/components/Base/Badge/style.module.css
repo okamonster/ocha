@@ -1,0 +1,14 @@
+.badge {
+  display: inline-block;
+  text-align: center;
+  padding: 3px 4px;
+  background-color: var(--color-button-bg-primary);
+  color: var(--color-button-primary);
+  font-weight: bold;
+  border-radius: 2px;
+  font-size: 12px;
+  word-wrap: break-word;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'Helvetica', 'Open Sans', sans-serif;
+}

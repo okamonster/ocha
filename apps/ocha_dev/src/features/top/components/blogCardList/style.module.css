@@ -1,0 +1,17 @@
+.blogCardList {
+  display: grid;
+  gap: 10px;
+  padding: 0 5%;
+
+  @media (min-width: 0) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 480px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
