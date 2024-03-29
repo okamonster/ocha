@@ -4,6 +4,7 @@ import withPWAInit from 'next-pwa'
 
 const withPWA = withPWAInit({
   dest: 'public',
+  register: true,
 })
 
 const nextConfig = withPWA({
