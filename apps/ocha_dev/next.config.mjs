@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
-import withPWA from 'next-pwa'
-withPWA({
-  pwa: {
-    dest: 'public',
-  },
+import withPWAInit from 'next-pwa'
+
+const withPWA = withPWAInit({
+  dest: 'public',
 })
+
 const nextConfig = withPWA({
   reactStrictMode: false,
   webpack: (config) => {
