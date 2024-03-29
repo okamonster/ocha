@@ -37,6 +37,13 @@ body {
     margin: 0;
   }
 
+  ol,
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
   input,
   textarea {
     font-style: normal;
