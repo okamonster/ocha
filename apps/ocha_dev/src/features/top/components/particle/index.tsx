@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { useMemo } from 'react'
-import * as THREE from 'three'
+import { SphereGeometry } from 'three'
 import { useFrame } from '@react-three/fiber'
 
 import vertex from '~/features/top/shader/vertexShader.glsl'
@@ -8,7 +8,7 @@ import fragment from '~/features/top/shader/fragmentShader.glsl'
 
 export const Particle = (): React.ReactNode => {
   const spherePosition = useMemo(() => {
-    const sphereGeometry = new THREE.SphereGeometry(3, 120, 120)
+    const sphereGeometry = new SphereGeometry(3, 120, 120)
     const positions = sphereGeometry.attributes.position.array
     return positions
   }, [])
