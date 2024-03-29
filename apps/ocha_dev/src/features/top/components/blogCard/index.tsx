@@ -19,7 +19,7 @@ export const BlogCard = ({ blog }: CardProps): React.ReactNode => {
         <Card.Section>
           <Image
             src={blog.OGP.url}
-            objectFit="fill"
+            objectFit="cover"
             alt={blog.title}
             width={1200}
             height={630}
