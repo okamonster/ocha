@@ -1,0 +1,12 @@
+.title {
+  font-size: 16px;
+}
+
+.tagList {
+  display: flex;
+  gap: 5px;
+}
+
+.blogImage {
+  max-height: 180px;
+}

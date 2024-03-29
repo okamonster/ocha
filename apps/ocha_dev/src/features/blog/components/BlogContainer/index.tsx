@@ -3,7 +3,7 @@ import styles from './style.module.css'
 import { SectionTitle } from '~/components/Base/SectionTitle'
 import { DefaultHeader } from '~/components/Navigations/DefaultHeader'
 import type { Blog } from '~/entitie/blog'
-import { BlogCard } from '~/features/top/components/blogCard'
+import { BlogCard } from '~/features/blog/components/blogCard'
 
 type Props = {
   blogs: Array<Blog>
