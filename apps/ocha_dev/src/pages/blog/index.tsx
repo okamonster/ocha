@@ -1,9 +1,11 @@
 import type { InferGetStaticPropsType, NextPage } from 'next'
+import { useEffect } from 'react'
 
 import { DeafaultHead } from '~/components/Head/DefaultHead'
 import { DefaultLayout } from '~/components/Layout/DefaultLayout'
 import type { Blog } from '~/entitie/blog'
 import { BlogContainer } from '~/features/blog/components/BlogContainer'
+import { sendLogEvent } from '~/libs/analytics'
 import { client } from '~/libs/client'
 
 type BlogPageProps = InferGetStaticPropsType<typeof getStaticProps>
@@ -13,6 +15,10 @@ type Props = {
 }
 
 const BlogPage: NextPage<BlogPageProps> = ({ blogs }: Props) => {
+  useEffect(() => {
+    sendLogEvent('view_blog', undefined)
+  }, [])
+
   return (
     <DefaultLayout>
       <DeafaultHead
