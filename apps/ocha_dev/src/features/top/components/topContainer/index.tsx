@@ -27,7 +27,7 @@ export const TopContainer = ({ blogs }: Props): React.ReactNode => {
           <SectionTitle title="PROFILE" description="自己紹介/経歴" />
           <div className={styles.profileContainer}>
             <Image
-              src="/images/profile.jpeg"
+              src="/images/profile.webp"
               alt="プロフィール"
               width={200}
               height={200}

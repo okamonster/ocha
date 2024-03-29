@@ -9,7 +9,7 @@ export const ProfileCard = (): React.ReactNode => {
   return (
     <div className={styles.profileCard}>
       <Image
-        src="/images/profile.jpeg"
+        src="/images/profile.webp"
         alt="プロフィール"
         width={200}
         height={200}
