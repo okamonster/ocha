@@ -18,11 +18,11 @@
     padding: 20px 30px 30px;
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     padding: 20px 90px 30px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1120px) {
     padding: 20px 150px 30px;
   }
 

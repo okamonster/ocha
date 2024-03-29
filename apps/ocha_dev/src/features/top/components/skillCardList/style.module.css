@@ -8,11 +8,11 @@
     grid-template-columns: 1fr;
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1120px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
