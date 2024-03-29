@@ -1,7 +1,6 @@
 .blogCardList {
   display: grid;
   gap: 10px;
-  padding: 0 5%;
 
   @media (min-width: 0) {
     grid-template-columns: 1fr;
