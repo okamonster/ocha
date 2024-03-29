@@ -1,9 +1,11 @@
 import type { InferGetStaticPropsType, NextPage } from 'next'
+import { useEffect } from 'react'
 
 import { DeafaultHead } from '~/components/Head/DefaultHead'
 import { DefaultLayout } from '~/components/Layout/DefaultLayout'
 import type { Blog } from '~/entitie/blog'
 import { TopContainer } from '~/features/top/components/topContainer'
+import { sendLogEvent } from '~/libs/analytics'
 import { client } from '~/libs/client'
 
 type IndexPageProps = InferGetStaticPropsType<typeof getStaticProps>
@@ -13,6 +15,10 @@ type Props = {
 }
 
 const IndexPage: NextPage<IndexPageProps> = ({ blogs }: Props) => {
+  useEffect(() => {
+    sendLogEvent('view_top', undefined)
+  }, [])
+
   return (
     <>
       <DeafaultHead
