@@ -32,7 +32,7 @@
   }
 
   .description {
-    animation: fadeDown 1s forwards 2s;
+    animation: fadeDown 1s forwards 1s;
     opacity: 0;
   }
 
