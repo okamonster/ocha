@@ -20,14 +20,12 @@
 
 .sectionTitle {
   .title {
-    position: relative;
+    font-weight: bold;
   }
 
-  .title:before {
-    position: absolute;
+  .border {
     border-bottom: solid 1px var(--color-primary);
     bottom: 0;
-    content: '';
     animation: slide 2s forwards;
   }
 
