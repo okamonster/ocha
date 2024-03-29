@@ -17,12 +17,12 @@ export const ContactList = (): React.ReactNode => {
         <p className={styles.title}>Twitter / X</p>
         <div className={styles.iconList}>
           <Link href="https://twitter.com/makura_nageru">
-            <ActionIcon variant="white" size={40}>
+            <ActionIcon variant="white" size={40} aria-label="Twitter">
               <FaTwitter color="var(--color-twitter)" />
             </ActionIcon>
           </Link>
           <Link href="https://twitter.com/makura_nageru">
-            <ActionIcon variant="white" size={40}>
+            <ActionIcon variant="white" size={40} aria-label="X">
               <FaXTwitter color="var(--color-x)" />
             </ActionIcon>
           </Link>
@@ -35,7 +35,7 @@ export const ContactList = (): React.ReactNode => {
           <p className={styles.title}>Instagram</p>
           <div className={styles.iconList}>
             <Link href="https://www.instagram.com/oka_monster/">
-              <ActionIcon variant="white" size={40}>
+              <ActionIcon variant="white" size={40} aria-label="Instagram">
                 <FaInstagram color="var(--color-instagram)" />
               </ActionIcon>
             </Link>
@@ -47,7 +47,7 @@ export const ContactList = (): React.ReactNode => {
           <p className={styles.title}>GitHub</p>
           <div className={styles.iconList}>
             <Link href="https://www.instagram.com/oka_monster/">
-              <ActionIcon variant="white" size={40}>
+              <ActionIcon variant="white" size={40} aria-label="GitHub">
                 <FaGithub color="var(--color-github)" />
               </ActionIcon>
             </Link>
