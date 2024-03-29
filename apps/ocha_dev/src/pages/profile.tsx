@@ -1,7 +1,21 @@
 import type { NextPage } from 'next'
 
+import { DeafaultHead } from '~/components/Head/DefaultHead'
+import { DefaultLayout } from '~/components/Layout/DefaultLayout'
+import { ProfileContainer } from '~/features/profile/components/profileContainer'
+
 const ProfilePage: NextPage = () => {
-  return <div />
+  return (
+    <DefaultLayout>
+      <DeafaultHead
+        title="お茶.dev"
+        description="お茶/岡本和輝のポートフォリオ"
+        ogpImage="https://www.xn--t8jy01w.dev/images/ogp.png"
+        path="profile"
+      />
+      <ProfileContainer />
+    </DefaultLayout>
+  )
 }
 
 export default ProfilePage
