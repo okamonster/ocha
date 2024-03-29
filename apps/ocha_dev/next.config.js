@@ -1,11 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
 
-const withPWA = require('next-pwa')({
-  dest: 'public',
-})
-
-const nextConfig = withPWA({
+const nextConfig = {
   reactStrictMode: false,
   webpack: (config) => {
     config.module.rules.push({
@@ -17,6 +13,6 @@ const nextConfig = withPWA({
   images: {
     domains: ['images.microcms-assets.io'],
   },
-})
+}
 
 module.exports = nextConfig
