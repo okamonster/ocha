@@ -1,0 +1,33 @@
+.navBar {
+  background-color: var(--color-bg-primary);
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  border-color: var(--color-border);
+
+  .navHeader {
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    align-items: center;
+
+    .navButton {
+      background-color: transparent;
+      border: none;
+
+      @media (min-width: 1120px) {
+        display: none;
+      }
+    }
+
+    .title {
+      font-size: 20px;
+    }
+  }
+
+  .navItemList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
