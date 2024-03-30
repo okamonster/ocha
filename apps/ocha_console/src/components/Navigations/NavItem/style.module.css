@@ -1,0 +1,10 @@
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: solid 1px var(--color-border);
+  background-color: var(--color-bg-white);
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
