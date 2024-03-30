@@ -1,0 +1,25 @@
+:root {
+  /* Theme colors */
+  --color-primary: #8686f4;
+
+  /* Background colors */
+  --color-bg-base: #f7f7f9;
+  --color-bg-white: #ffffff;
+
+  /* Text colors */
+  --color-text-color: #333;
+  --color-text-primary: #8686f4;
+  --color-text-white: #ffffff;
+
+  /* Button colors */
+  --color-button-bg-primary: #eaeafa;
+  --color-button-primary: #a3a0d3;
+
+  /* Border colors */
+  --color-header-border: #e0e0e0;
+
+  --color-twitter: #1da1f2;
+  --color-instagram: #e1306c;
+  --color-github: #333;
+  --color-x: #000;
+}
