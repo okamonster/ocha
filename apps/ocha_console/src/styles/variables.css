@@ -10,13 +10,14 @@
   --color-text-color: #333;
   --color-text-primary: #8686f4;
   --color-text-white: #ffffff;
+  --color-bg-primary: #eaeafa;
 
   /* Button colors */
   --color-button-bg-primary: #eaeafa;
   --color-button-primary: #a3a0d3;
 
   /* Border colors */
-  --color-header-border: #e0e0e0;
+  --color-border: #d0d0d0;
 
   --color-twitter: #1da1f2;
   --color-instagram: #e1306c;
