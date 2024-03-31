@@ -5,12 +5,15 @@ import '@mantine/core/styles.css'
 import '~/styles/globals.css'
 import '~/styles/reset.css'
 import '~/styles/variables.css'
+import { AuthProvider } from '~/providers/AuthProvider'
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider>
-      <Component {...pageProps} />
-    </MantineProvider>
+    <AuthProvider>
+      <MantineProvider>
+        <Component {...pageProps} />
+      </MantineProvider>
+    </AuthProvider>
   )
 }
