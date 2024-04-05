@@ -46,7 +46,7 @@ export const ContactList = (): React.ReactNode => {
         <ContactCard
           title="GitHub"
           contents={
-            <Link href="https://www.instagram.com/oka_monster/">
+            <Link href="https://github.com/okamonster">
               <ActionIcon variant="white" size={40} aria-label="GitHub">
                 <FaGithub color="var(--color-github)" />
               </ActionIcon>
