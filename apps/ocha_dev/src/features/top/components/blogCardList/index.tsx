@@ -1,6 +1,6 @@
 import styles from './style.module.css'
 
-import { BlogCard } from '~/features/top/components/blogCard'
+import { BlogCard } from '~/features/blog/components/blogCard'
 import type { Blog } from '~/entitie/blog'
 
 type Props = {

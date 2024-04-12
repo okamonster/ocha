@@ -14,7 +14,7 @@ type CardProps = {
 
 export const BlogCard = ({ blog }: CardProps): React.ReactNode => {
   return (
-    <Link href={`/blog/${blog.id}`}>
+    <Link href={`/blog/${blog.id}`} className={styles.blogCard}>
       <Card shadow="lg">
         <Card.Section>
           <Image
