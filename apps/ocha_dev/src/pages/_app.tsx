@@ -9,9 +9,9 @@ import '~/styles/variables.css'
 import '~/styles/globals.css'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <MantineProvider>
-      <Component {...pageProps} />
-    </MantineProvider>
-  )
+	return (
+		<MantineProvider>
+			<Component {...pageProps} />
+		</MantineProvider>
+	)
 }

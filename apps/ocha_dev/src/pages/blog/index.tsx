@@ -11,35 +11,35 @@ import { client } from '~/libs/client'
 type BlogPageProps = InferGetStaticPropsType<typeof getStaticProps>
 
 type Props = {
-  blogs: Array<Blog>
+	blogs: Array<Blog>
 }
 
 const BlogPage: NextPage<BlogPageProps> = ({ blogs }: Props) => {
-  useEffect(() => {
-    sendLogEvent('view_blog', undefined)
-  }, [])
+	useEffect(() => {
+		sendLogEvent('view_blog', undefined)
+	}, [])
 
-  return (
-    <DefaultLayout>
-      <DeafaultHead
-        title="お茶.dev"
-        description="お茶/岡本和輝のポートフォリオ"
-        ogpImage="https://www.xn--t8jy01w.dev/images/ogp.png"
-        path="blog"
-      />
-      <BlogContainer blogs={blogs} />
-    </DefaultLayout>
-  )
+	return (
+		<DefaultLayout>
+			<DeafaultHead
+				title="お茶.dev"
+				description="お茶/岡本和輝のポートフォリオ"
+				ogpImage="https://www.xn--t8jy01w.dev/images/ogp.png"
+				path="blog"
+			/>
+			<BlogContainer blogs={blogs} />
+		</DefaultLayout>
+	)
 }
 
 export default BlogPage
 
 export const getStaticProps = async () => {
-  const data = await client.get({
-    endpoint: 'blogs',
-  })
+	const data = await client.get({
+		endpoint: 'blogs',
+	})
 
-  return {
-    props: { blogs: data.contents },
-  }
+	return {
+		props: { blogs: data.contents },
+	}
 }
