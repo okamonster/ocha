@@ -6,16 +6,12 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "lint:fix": "turbo lint --fix",
-    "format": "prettier --write",
     "cspell": "cspell -c ./cspell.json './apps/*/src/**/*' './packages/*/src/**/*'"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "cspell": "^8.6.0",
-    "eslint-import-resolver-webpack": "^0.13.8",
-    "prettier": "^3.2.5",
     "turbo": "latest"
   },
   "engines": {
