@@ -1,18 +1,18 @@
 .skillCardList {
-  display: grid;
-  gap: 10px;
-  padding: 0 8%;
+	display: grid;
+	gap: 10px;
+	padding: 0 8%;
 
-  @media (min-width: 0) {
-    gap: 5px;
-    grid-template-columns: 1fr;
-  }
+	@media (min-width: 0) {
+		gap: 5px;
+		grid-template-columns: 1fr;
+	}
 
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
+	@media (min-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+	}
 
-  @media (min-width: 1120px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+	@media (min-width: 1120px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }

@@ -1,46 +1,46 @@
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .profileContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 
-  @media (min-width: 0) {
-    padding: 20px 30px 30px;
-  }
+	@media (min-width: 0) {
+		padding: 20px 30px 30px;
+	}
 
-  @media (min-width: 768px) {
-    padding: 20px 90px 30px;
-  }
+	@media (min-width: 768px) {
+		padding: 20px 90px 30px;
+	}
 
-  @media (min-width: 1120px) {
-    padding: 20px 150px 30px;
-  }
+	@media (min-width: 1120px) {
+		padding: 20px 150px 30px;
+	}
 
-  .profileSection {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    animation: fadeIn forwards 2s;
+	.profileSection {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		animation: fadeIn forwards 2s;
 
-    .introduction {
-      line-height: 1.5;
-    }
-  }
+		.introduction {
+			line-height: 1.5;
+		}
+	}
 
-  .careerSection {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    animation: fadeIn forwards 2s;
-  }
+	.careerSection {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		animation: fadeIn forwards 2s;
+	}
 }

@@ -1,32 +1,32 @@
 {
-    "theme_color": "#8686f4",
-    "background_color": "#f7f7f9",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
-    "name": "\u304a\u8336.dev",
-    "short_name": "\u304a\u8336.dev",
-    "description": "\u304a\u8336/\u5ca1\u672c\u548c\u8f1d\u306e\u30dd\u30fc\u30c8\u30d5\u30a9\u30ea\u30aa",
-    "icons": [
-        {
-            "src": "/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+	"theme_color": "#8686f4",
+	"background_color": "#f7f7f9",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/",
+	"name": "\u304a\u8336.dev",
+	"short_name": "\u304a\u8336.dev",
+	"description": "\u304a\u8336/\u5ca1\u672c\u548c\u8f1d\u306e\u30dd\u30fc\u30c8\u30d5\u30a9\u30ea\u30aa",
+	"icons": [
+		{
+			"src": "/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-256x256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-384x384.png",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
 }

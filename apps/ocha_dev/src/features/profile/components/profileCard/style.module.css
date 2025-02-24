@@ -1,59 +1,59 @@
 .profileCard {
-  background-color: var(--color-bg-white);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+	background-color: var(--color-bg-white);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
 
-  @media (min-width: 0) {
-    flex-direction: column;
-  }
+	@media (min-width: 0) {
+		flex-direction: column;
+	}
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
 
-  .profileImage {
-    border-radius: 50%;
-    border: 1px solid var(--color-primary);
+	.profileImage {
+		border-radius: 50%;
+		border: 1px solid var(--color-primary);
 
-    @media (min-width: 0) {
-      flex-direction: column;
-      width: 120px;
-      height: 120px;
-    }
+		@media (min-width: 0) {
+			flex-direction: column;
+			width: 120px;
+			height: 120px;
+		}
 
-    @media (min-width: 768px) {
-      flex-direction: row;
-      width: 200px;
-      height: 200px;
-    }
-  }
+		@media (min-width: 768px) {
+			flex-direction: row;
+			width: 200px;
+			height: 200px;
+		}
+	}
 
-  .profileDetail {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+	.profileDetail {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 
-    .name {
-      font-weight: bold;
-      color: var(--color-primary);
+		.name {
+			font-weight: bold;
+			color: var(--color-primary);
 
-      @media (min-width: 0) {
-        font-size: 16px;
-      }
+			@media (min-width: 0) {
+				font-size: 16px;
+			}
 
-      @media (min-width: 768px) {
-        font-size: 20px;
-      }
-    }
+			@media (min-width: 768px) {
+				font-size: 20px;
+			}
+		}
 
-    .profileItem {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-  }
+		.profileItem {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+	}
 }
