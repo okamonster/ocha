@@ -10,6 +10,7 @@
     "cspell": "cspell -c ./cspell.json './apps/*/src/**/*' './packages/*/src/**/*'"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "cspell": "^8.6.0",
@@ -17,10 +18,7 @@
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.1.2",
+  "packageManager": "bun@1.2.3",
   "workspaces": [
     "apps/*",
     "packages/*"
