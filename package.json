@@ -18,6 +18,9 @@
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
+  "engines": {
+    "bun": ">=1.2"
+  },
   "packageManager": "bun@1.2.3",
   "workspaces": [
     "apps/*",
