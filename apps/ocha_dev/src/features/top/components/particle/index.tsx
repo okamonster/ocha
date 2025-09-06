@@ -32,10 +32,8 @@ export const Particle = (): React.ReactNode => {
     <points rotation={[0, 0, Math.PI / 3]}>
       <bufferGeometry attach="geometry">
         <bufferAttribute
+          args={[spherePosition, 3]}
           attach="attributes-position"
-          array={spherePosition}
-          itemSize={3}
-          count={spherePosition.length / 3}
         />
       </bufferGeometry>
       <shaderMaterial
