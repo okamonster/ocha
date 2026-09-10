@@ -9,7 +9,7 @@
     "cspell": "cspell -c ./cspell.json './apps/*/src/**/*' './packages/*/src/**/*'"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.5.13",
     "@repo/typescript-config": "*",
     "cspell": "^8.6.0",
     "turbo": "latest"
